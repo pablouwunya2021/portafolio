@@ -25,7 +25,7 @@ const Intro = () => {
       <div className="intro-content">
         
         <h1>Hola, soy Pablo Cabrera</h1>
-        <h3>He/They</h3>
+        <h3></h3>
         <img
           src="https://scontent.fgua9-2.fna.fbcdn.net/v/t39.30808-6/503858262_1853114538867324_2028702726041461684_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Viz7DuJFKhwQ7kNvwGL-OI_&_nc_oc=AdnRjmHIC_jjz8XQOMIwStP69OCMkxyANGGZ-drVNpB9bybEYIRVepyRCAFm-BovHcQ&_nc_zt=23&_nc_ht=scontent.fgua9-2.fna&_nc_gid=usNSZkpTG2208KbcKQJumw&oh=00_AfI29BL6IUwEP1L96D6Yj7fSXHvAjeUokTSRPxQYQchLeQ&oe=6845EB6A"
           alt="Pablo Cabrera"
