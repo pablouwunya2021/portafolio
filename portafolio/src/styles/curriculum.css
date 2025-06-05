@@ -18,12 +18,13 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px var(--shadow-light);
   max-width: 600px;
-  margin: 3rem auto;
+  margin: 4rem auto 3rem; /* espacio arriba y abajo */
   text-align: center;
   transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  z-index: 1; /* por si acaso */
   position: relative;
-  left: 25%;
 }
+
 
 /* Imagen centrada y más grande */
 .curriculum-card img {
@@ -121,35 +122,6 @@ body.dark .project-card:hover {
   z-index: 1;
 }
 
-/* Contenedor de la imagen */
-.decorative-image4-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
 
-  pointer-events: none; 
-}
 
-/* Imagen decorativa base */
-.decorative-image4 {
-  position: absolute;
-  top: 25%;
-  left: 15%; /* mueve a la izquierda */
-  width: 25%;
-  height: auto;
-  transform: rotate(0deg);
-  opacity: 0.50;
-
-  /* Filtro dorado */
-  
-
-  /* Mezcla para integrarse con el fondo */
-  mix-blend-mode: screen;
-
- 
-}
 

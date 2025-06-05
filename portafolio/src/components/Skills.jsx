@@ -3,8 +3,6 @@ import React from "react";
 import "../styles/Skills.css";
 import reactLogo from "../assets/react.png";
 import jsLogo from "../assets/js.png";
-import lightImage from "../assets/camaraclara.png";
-import darkImage from "../assets/camaraoscura.png";
 import { useTheme } from "./ThemeContext";
 
 
@@ -47,14 +45,11 @@ const skills = [
 ];
 
 const Skills = () => {
-  const { theme } = useTheme(); // "light" o "dark"
-  const decorativeImage2 = theme === "dark" ? darkImage : lightImage;
+;
   return (
 
     <section className="skills-section" id="habilidades">
-      <div className="decorative-image3-container">
-        <img src={decorativeImage2} className="decorative-image3" alt="Decorativo" />
-      </div>
+
       <h2>Mis Habilidades</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (

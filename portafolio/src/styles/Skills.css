@@ -79,39 +79,14 @@
   font-weight: bold;
 }
 .skills-section {
-  position: relative; /* padre para que hijos absolutos se posicionen aquí */
-  height: 600px; /* o lo que necesites */
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
   background-color: var(--background);
-  overflow: hidden;
+  overflow: visible; /* permite que el contenido crezca */
+  margin-bottom: 4rem; /* da espacio al siguiente componente */
 }
 
-.decorative-image3-container {
-  position: absolute;
-  top: 50%; 
-  left: 80%;
-  width: 40%;
-  height: auto;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 0;
-}
 
-.decorative-image3 {
-  width: 100%;
-  height: auto;
-  opacity: 0.1;
-  filter: sepia(3) hue-rotate(20deg) saturate(5);
-  mix-blend-mode: screen;
-}
-/* Mostrar solo la imagen del modo oscuro */
-@media (prefers-color-scheme: dark) {
-  .decorative-image3-light {
-    opacity: 0;
-    z-index: 0;
-  }
-  .decorative-image3-dark {
-    opacity: 0.15;
-    z-index: 1;
-  }
-}
+
 

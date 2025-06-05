@@ -110,8 +110,22 @@ export default function Landing() {
   return (
     <div className="landing-container">
       <canvas ref={canvasRef} className="wave-canvas" />
+      <img
+        src="https://png.pngtree.com/png-vector/20240603/ourmid/pngtree-red-telephone-in-pixel-art-style-png-image_12603980.png"
+        alt="contacto"
+        style={{
+          position: "absolute",
+          top: "2px",
+          left: "625px",
+          width: "20%",
+          height: "auto",
+          cursor: "pointer",
+          transition: "transform 0.3s ease",
+          opacity: 0.5,
+          
+        }}
+      />
       <div className="content">
-        <h1>Onda de frecuencia AM</h1>
       </div>
     </div>
     

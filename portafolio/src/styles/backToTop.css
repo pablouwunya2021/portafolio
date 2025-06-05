@@ -1,0 +1,48 @@
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--btn-bg-light);
+  color: var(--btn-color-light);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+body.dark .back-to-top-btn {
+  background-color: var(--btn-bg-dark);
+  color: var(--btn-color-dark);
+}
+
+.back-to-top-btn:hover {
+  background-color: var(--btn-color-light);
+  color: var(--btn-bg-light);
+}
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--btn-bg-light, #eee);
+  color: var(--btn-color-light, #000);
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.back-to-top-btn:hover {
+  background-color: var(--btn-color-light, #000);
+  color: var(--btn-bg-light, #eee);
+}

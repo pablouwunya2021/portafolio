@@ -6,6 +6,10 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Curriculum from "./components/curriculum";
+import Contacto from "./components/Contacto";
+import  "./components/BackToTopButton"
+import BackToTopButton from "./components/BackToTopButton";
+
 
 export default function App() {
   // No manejo tema aquí, todo en ThemeToggleButton
@@ -19,6 +23,8 @@ export default function App() {
       <Projects />
       <Skills />
       <Curriculum />
+      <Contacto />
+      <BackToTopButton />
       <Landing />
       
     </>

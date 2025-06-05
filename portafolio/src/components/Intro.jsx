@@ -16,7 +16,7 @@ const Intro = () => {
   };
 
   return (
-    <section className="intro-section">
+    <section className="intro-section" id="intro"> 
       
       <div className="decorative-image2-container">
         <img src={decorativeImage2} className="decorative-image2" alt="Decorativo" />
