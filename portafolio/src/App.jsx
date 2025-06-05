@@ -5,7 +5,7 @@ import ThemeToggleButton from "./components/ThemeToggleButton";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Curriculum from "./components/curriculum";
+import Curriculum from "./components/Curriculum";
 import Contacto from "./components/Contacto";
 import  "./components/BackToTopButton"
 import BackToTopButton from "./components/BackToTopButton";
