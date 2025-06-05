@@ -15,6 +15,13 @@
   margin-bottom: 0.5rem;
 }
 
+.intro-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+  opacity: 0.70;
+}
+
 .intro-content h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -72,4 +79,86 @@
 .cta-buttons button:hover {
   background-color: var(--primary-dark);
 }
+/* Sombra para modo claro */
+@media (prefers-color-scheme: light) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Sombra para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+.project-card {
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+.project-card {
+  background: var(--card-background);
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+body.light .project-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .project-card {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra más grande y oscura en hover */
+}
+
+/* Ajusta según el modo */
+body.dark .project-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2); /* sombra blanca más grande en modo oscuro */
+}
+/* Contenedor de toda la sección */
+.projects-container {
+  position: relative; /* necesario para posicionar la imagen decorativa dentro */
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Contenedor de la imagen */
+.decorative-image2-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  pointer-events: none; /* Esto permite que todo debajo reciba clics */
+}
+
+.decorative-image2 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 50%;
+  height: auto;
+  transform: rotate(0deg);
+  opacity: 0.15;
+
+  filter: sepia(1) hue-rotate(20deg) saturate(5);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transition: filter 0.3s, transform 0.3s;
+}
+
+
+
+
+
 

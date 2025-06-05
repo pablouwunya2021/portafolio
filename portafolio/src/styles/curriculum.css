@@ -1,0 +1,155 @@
+/* Variables para temas */
+:root {
+
+  --shadow-light: rgba(0, 0, 0, 0.15);
+  --shadow-dark: rgba(255, 255, 255, 0.1);
+
+  --btn-color-light: #000;
+  --btn-color-dark: #fff;
+  --btn-bg-light: #eee;
+  --btn-bg-dark: #444;
+}
+
+/* Card general */
+.curriculum-card {
+  background: var(--card-background);
+  color: var(--btn-color-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  position: relative;
+  left: 25%;
+}
+
+/* Imagen centrada y más grande */
+.curriculum-card img {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 300px; /* Ajusta tamaño */
+  width: 80%;
+  height: auto;
+}
+
+/* Botón */
+.download-btn {
+  background-color: var(--btn-bg-light);
+  color: var(--btn-color-light);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Cambios en hover */
+.download-btn:hover {
+  background-color: var(--btn-color-light);
+  color: var(--btn-bg-light);
+}
+
+/* Modo oscuro */
+/* Si usas clase en <body> o contenedor */
+body.dark .curriculum-card {
+  background-color: var(--card-bg-dark);
+  color: var(--btn-color-dark);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+}
+
+body.dark .download-btn {
+  background-color: var(--btn-bg-dark);
+  color: var(--btn-color-dark);
+}
+
+body.dark .download-btn:hover {
+  background-color: var(--btn-color-dark);
+  color: var(--btn-bg-dark);
+}
+/* Sombra para modo claro */
+@media (prefers-color-scheme: light) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Sombra para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+.project-card {
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+.project-card {
+  background: var(--card-background);
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+body.light .project-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .project-card {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra más grande y oscura en hover */
+}
+
+/* Ajusta según el modo */
+body.dark .project-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2); /* sombra blanca más grande en modo oscuro */
+}
+/* Contenedor de toda la sección */
+.projects-container {
+  position: relative; /* necesario para posicionar la imagen decorativa dentro */
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Contenedor de la imagen */
+.decorative-image4-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  pointer-events: none; 
+}
+
+/* Imagen decorativa base */
+.decorative-image4 {
+  position: absolute;
+  top: 25%;
+  left: 15%; /* mueve a la izquierda */
+  width: 25%;
+  height: auto;
+  transform: rotate(0deg);
+  opacity: 0.50;
+
+  /* Filtro dorado */
+  
+
+  /* Mezcla para integrarse con el fondo */
+  mix-blend-mode: screen;
+
+ 
+}
+

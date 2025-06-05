@@ -4,6 +4,12 @@ import "../styles/Projects.css";
 import disco from "../assets/discos.png";
 import farmacia from "../assets/farmacia.png";
 import apimagen from "../assets/api.png";
+import lightImage from "../assets/tb2.png";
+import darkImage from "../assets/tbht.png";
+import { useTheme } from "./ThemeContext"; 
+
+
+
 
 
 const featuredProjects = [
@@ -35,8 +41,14 @@ const featuredProjects = [
 ];
 
 export default function Projects() {
+  const { theme } = useTheme(); // "light" o "dark"
+  const decorativeImage = theme === "dark" ? darkImage : lightImage;
   return (
     <section className="projects-container" id="proyectos">
+      <div className="decorative-image-container">
+        <img src={decorativeImage} className="decorative-image" alt="Decorativo" />
+      </div>
+ 
       <h2>Mis Proyectos</h2>
       <div className="projects-grid">
         {featuredProjects.map(project => (

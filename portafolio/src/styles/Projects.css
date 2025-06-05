@@ -42,3 +42,86 @@
   border-radius: 12px;
   margin-bottom: 1rem;
 }
+/* Sombra para modo claro */
+@media (prefers-color-scheme: light) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Sombra para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+.project-card {
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+.project-card {
+  background: var(--card-background);
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+body.light .project-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .project-card {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra más grande y oscura en hover */
+}
+
+/* Ajusta según el modo */
+body.dark .project-card:hover {
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2); /* sombra blanca más grande en modo oscuro */
+}
+/* Contenedor de toda la sección */
+.projects-container {
+  position: relative; /* necesario para posicionar la imagen decorativa dentro */
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Contenedor de la imagen */
+.decorative-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+
+  pointer-events: none; 
+}
+
+/* Imagen decorativa base */
+.decorative-image {
+  position: absolute;
+  top: -10%;
+  left: -25%; /* mueve a la izquierda */
+  width: 150%;
+  height: auto;
+  transform: rotate(-20deg);
+  opacity: 0.15;
+
+  /* Filtro dorado */
+  filter: sepia(1) hue-rotate(20deg) saturate(5);
+
+  /* Mezcla para integrarse con el fondo */
+  mix-blend-mode: screen;
+
+ 
+}
+
+

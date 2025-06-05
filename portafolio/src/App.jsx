@@ -4,6 +4,8 @@ import Landing from "./sections/Landing";
 import ThemeToggleButton from "./components/ThemeToggleButton";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Curriculum from "./components/curriculum";
 
 export default function App() {
   // No manejo tema aquí, todo en ThemeToggleButton
@@ -15,6 +17,8 @@ export default function App() {
       <BackgroundWave />
       <Intro />
       <Projects />
+      <Skills />
+      <Curriculum />
       <Landing />
       
     </>

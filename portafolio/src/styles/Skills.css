@@ -1,0 +1,117 @@
+.skills-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 23px;
+  z-index: 1;
+}
+
+.skill-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-card:hover .skill-overlay {
+  opacity: 1;
+}
+
+.progress-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border-top: 8px solid transparent;
+  border-right: 8px solid currentColor;
+  border-bottom: 8px solid currentColor;
+  border-left: 8px solid transparent;
+  transform: rotate(45deg);
+  animation: spin-in 1s ease-out forwards;
+  margin-bottom: 10px;
+}
+
+@keyframes spin-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.skill-level {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+.skills-section {
+  position: relative; /* padre para que hijos absolutos se posicionen aquí */
+  height: 600px; /* o lo que necesites */
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.decorative-image3-container {
+  position: absolute;
+  top: 50%; 
+  left: 80%;
+  width: 40%;
+  height: auto;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decorative-image3 {
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+  filter: sepia(3) hue-rotate(20deg) saturate(5);
+  mix-blend-mode: screen;
+}
+/* Mostrar solo la imagen del modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .decorative-image3-light {
+    opacity: 0;
+    z-index: 0;
+  }
+  .decorative-image3-dark {
+    opacity: 0.15;
+    z-index: 1;
+  }
+}
+
