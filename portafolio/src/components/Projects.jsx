@@ -4,6 +4,7 @@ import "../styles/Projects.css";
 import disco from "../assets/discos.png";
 import farmacia from "../assets/farmacia.png";
 import apimagen from "../assets/api.png";
+import cafe from "../assets/cafe.png";
 import lightImage from "../assets/tb2.png";
 import darkImage from "../assets/tbht.png";
 import { useTheme } from "./ThemeContext"; 
@@ -19,7 +20,7 @@ const featuredProjects = [
     description: "App web para gestionar productos y ventas de una farmacia.",
     technologies: ["React", "CSS", "Node.js, PostgreSQL"],
     image: farmacia,
-    repo: "https://github.com/Josero31/pharmacenter_proyecto",
+    repo: "https://github.com/pablouwunya2021/PharmaCenter",
   },
   {
     id: 2,
@@ -37,6 +38,13 @@ const featuredProjects = [
     technologies: ["node.js", "postgreSQL"],
     image: apimagen,
     repo: "https://github.com/pablouwunya2021/ejDocker",
+  },
+  {
+    id: 4,
+    name: "Tienda de café Shopify",
+    description: "App de tienda de café en Shopify.",
+    technologies: ["Shopify", "Liquid", "JavaScript"],
+    image: cafe,
   }
 ];
 

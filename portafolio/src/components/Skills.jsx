@@ -25,7 +25,7 @@ const skills = [
     color: "#306998",
   },
   { name: "Java",
-    logo: "https://static-00.iconduck.com/assets.00/java-original-icon-756x1024-j3tx11wk.png",
+    logo: "https://cdn.freebiesupply.com/logos/large/2x/java-logo-svg-vector.svg",
     level: "Java - Intermedio",
     color: "#ff481f",
   },
@@ -40,6 +40,12 @@ const skills = [
     logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png",
     level: "Docker - Principiante",
     color: "#2496ED",
+  },
+    {
+    name: "MongoDB",
+    logo: "https://images.icon-icons.com/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
+    level: "MongoDB - Principiante",
+    color: "#47A248",
   }
 
 ];

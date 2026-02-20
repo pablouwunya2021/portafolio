@@ -8,7 +8,7 @@ const Contacto = () => {
       <div className="contact-cards">
         <div className="contact-card">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1101px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png" ></img>
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Microsoft_Office_Outlook_%282018%E2%80%932024%29.svg/960px-Microsoft_Office_Outlook_%282018%E2%80%932024%29.svg.png" ></img>
           <h3>Correo</h3>
           <p>PabloCab2005@outlook.com</p>
         </div>
